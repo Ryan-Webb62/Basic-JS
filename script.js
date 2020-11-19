@@ -105,7 +105,7 @@ console.log(`Or you
 can just 
 do this.`); */
 
-const age = 15;
+/* const age = 15;
 
 if (age >= 18) {
   console.log('Sarah can start driving 🏎');
@@ -123,3 +123,23 @@ if (birthYear <= 2000) {
   century = 21;
 }
 console.log(century);
+ */
+
+// Type Conversion and Type Coercion
+// Type Conversion
+const inputYear = '1991';
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 18);
+
+console.log(String(23));
+
+// Type Coercion
+console.log('I am ' + 23 + ' years old.'); // the + trigger coercion to string
+console.log('23' - '10' - 3); // the - triggered coercion to number
+console.log('23' * 2); // coercion to number
+console.log('23' / 2); // coercion to number
+console.log('23' > 2); // coercion to number
+
+let n = '1' + 1;
+n = n - 1;
+console.log(n);
