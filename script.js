@@ -148,7 +148,7 @@ console.log(n);
 //Truthy and Falsy Values
 //  5 Falsy values: 0, ' ', undefined, null, NaN -- These will become false when we convert them to boolean
 
-console.log(Boolean(0));
+/* console.log(Boolean(0));
 console.log(Boolean('Jonas'));
 console.log(Boolean(undefined));
 console.log(Boolean({}));
@@ -167,4 +167,30 @@ if (height) {
   console.log('Yay, height is defined');
 } else {
   console.log('Height is undefined!');
+} */
+
+// Equality Operators == vs ===
+
+const age = '18';
+
+// === is the strict equality operator will not do type coercion
+if (age === 18) console.log('You just became an adult (strict)');
+
+// == is the loose equality operator and will do type coercion
+if (age == 18) console.log('You just became an adult (loose)');
+
+const favorite = Number(prompt('What is your favorite number?'));
+console.log(favorite);
+console.log(typeof favorite);
+
+if (favorite === 23) {
+  console.log('Cool 23 is an amazing number!');
+} else if (favorite === 7) {
+  console.log('7 is also a cool number');
+} else if (favorite === 9) {
+  console.log('Nine is also a cool number');
+} else {
+  console.log('Number is not 23, 9, or 7');
 }
+
+if (favorite !== 23) console.log('Why not 23?');
