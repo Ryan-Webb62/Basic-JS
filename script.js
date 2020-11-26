@@ -223,7 +223,7 @@ if (hasGoodVision && hasDriversLicense && !isTired) {
 
 // The switch statement
 
-const day = 'monday';
+/* const day = 'monday';
 
 switch (day) {
   case 'monday':
@@ -262,3 +262,47 @@ if (day === 'monday') {
 } else {
   console.log('Not a valid day!');
 }
+ */
+
+//  Statements and Expressions
+
+// Expressions resolves to a value
+/* 
+3 + 4;
+1991;
+true && false && !false;
+
+//  Statements
+
+if (23 > 10) {
+  const str = '23 is bigger';
+}
+
+console.log(`I'm ${2037 - 1991} years old`); // Template litteral allows expressions only
+
+const me = 'Jonas';
+console.log(`I'm ${2037 - 1991} years old ${me}`); // Expression
+ */
+
+// The conditional (Ternary) Operator
+
+const age = 23;
+// age >= 18
+//   ? console.log('I like to drink wine🍷')
+//   : console.log('I like to drink water 💧');
+
+const drink = age >= 18 ? 'wine 🍷' : 'water 💧';
+console.log(drink);
+
+let drink2;
+if (age >= 18) {
+  drink2 = 'wine 🍷';
+} else {
+  drink2 = 'water 💧';
+}
+
+console.log(drink2);
+
+// Because the Ternary operator is an expression so it can be used in template literals
+
+console.log(`I like to drink ${age >= 18 ? 'wine 🍷' : 'water 💧'}`);
